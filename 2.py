@@ -1,9 +1,11 @@
 a = input("Введите список:")
 a_list = a.split()
-b = len(a)
+a_len = len(a_list)
 i = 0
-while i < b -1:
-    a_list[i], a_list[i+1] = a_list[i+1], a_list[i]
+while i < a_len -1:
+    b = a_list[i]
+    a_list[i] = a_list[i+1]
+    a_list[i+1] = b
     i+= 2
 
 
