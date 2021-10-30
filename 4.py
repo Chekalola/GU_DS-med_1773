@@ -8,7 +8,7 @@ class TechStore:
     def __repr__(self):
         return f'{self.techs}'
 
-    def tech_count(self, count=None):
+    def tech_count(self):
         sum = 0
         for el in self.techs:
             sum += el.count
